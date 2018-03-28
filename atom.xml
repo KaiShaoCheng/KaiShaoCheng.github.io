@@ -6,7 +6,7 @@
   <link href="KaiShaoCheng.github.io/atom.xml" rel="self"/>
   
   <link href="https://KaiShaoCheng.github.io/"/>
-  <updated>2018-03-26T10:52:36.061Z</updated>
+  <updated>2018-03-28T06:26:00.187Z</updated>
   <id>https://KaiShaoCheng.github.io/</id>
   
   <author>
@@ -17,23 +17,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://KaiShaoCheng.github.io/2018/03/26/hello-world/"/>
-    <id>https://KaiShaoCheng.github.io/2018/03/26/hello-world/</id>
-    <published>2018-03-26T10:52:36.061Z</published>
-    <updated>2018-03-26T10:52:36.061Z</updated>
+    <title></title>
+    <link href="https://KaiShaoCheng.github.io/2018/03/28/01%E8%AE%B0%E5%BD%95%E6%9C%AC%E7%AB%99%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
+    <id>https://KaiShaoCheng.github.io/2018/03/28/01记录本站搭建过程/</id>
+    <published>2018-03-28T06:19:33.000Z</published>
+    <updated>2018-03-28T06:26:00.187Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>#第一篇文章 本站的搭建过程<br>我是KSCheng。<br>专业读的软件工程，工作后选择创业，荒废了一段技术能力。<br>这儿是我的个人站点，不定时更新一些文章吧。<br>今天将简单记录这个网站的搭建过程。    </p><p>###以下是这篇文章的内容概要<br>· 选购服务器/配置<br>· 选购域名/解析<br>· 搭建hexo/配置<br>· 发布第一篇文章  </p><h2 id="选购服务器-配置"><a href="#选购服务器-配置" class="headerlink" title="###选购服务器/配置  "></a>###选购服务器/配置  </h2><p>服务器的选购上，我无法提供更好（优惠）的选择，也没有全面的比较各大服务商。<br>我所使用的服务器提供商是<strong>搬瓦工Bandwagong</strong> <a href="https://www.bwh1.net" target="_blank" rel="noopener">链接</a>  </p><blockquote><p><em>一年 $29.99（RMB 188）折合下来一个月15.7元</em>    </p></blockquote><p>总体来说，还是很划算的。<br>Steam挂卡 / 搭建ss / 建这个站<br>搭建ss只是为了方便，不想被挡。<br>同时国内稳定的ss服务大多在10元/月朝上。  </p><p>购买好服务器以后，我只是简单做了以下配置：<br>1.配置BBR优化网络 &amp; 搭建ShadowSocks  </p><blockquote><p> <a href="https://www.94ish.net/1635.html" target="_blank" rel="noopener">Linux网络优化加速一键脚本</a> —— By：千影<br> <a href="https://blog.csdn.net/u012436758/article/details/54587434" target="_blank" rel="noopener">CentOS7搭建ss以及加速</a> —— By： sweetod<br> <a href="https://www.cnblogs.com/zhangqiuchi/p/8454241.html" target="_blank" rel="noopener">CentOS7 配置 shadowsock</a> —— By：张秋池<br> <a href="https://www.cnblogs.com/moxiaoan/p/5683743.html" target="_blank" rel="noopener">CentOS7使用firewalld打开关闭防火墙与端口</a> —— By：莫小安</p></blockquote><p>2.配置Steam挂卡  </p><blockquote><p> <a href="http://itdream.me/2017/10/366" target="_blank" rel="noopener">Linux下使用ASF(ArchiSteamFarm)V3实现云挂卡</a> —— By：哆啦IT梦<br> <a href="https://www.cnblogs.com/lazb/p/5475155.html" target="_blank" rel="noopener">Linux screen 命令详解</a> —— By：赖忠标</p></blockquote><p>教程都贴在后面的链接，感谢原作者们的倾囊相授。<br>不得不说，上学时候没接触Linux系统真的很亏。<br>为了做好这些配置，恶补了不少Linux的操作（只是操作而已）。  </p><h2 id="选购域名-解析"><a href="#选购域名-解析" class="headerlink" title="###选购域名/解析 "></a>###选购域名/解析 </h2><p>同样选择的国外的服务商，据说国内的域名服务商都要求必须实名制，对我来说操作比较麻烦。<br>Godaddy狗爹 <a href="https://sg.godaddy.com/zh/" target="_blank" rel="noopener">链接</a> ——中文化、支付宝付款<br>粗略研究了一下价格，基本大差不差吧。我选择的site域名首年7.3元RMB。<br>续费金额有点夸张，寻思到时再另找门路。<br>支付宝付款以后，直接进入解析，前提是服务器上Hexo弄好了  </p><blockquote><p><a href="https://www.cnblogs.com/penglei-it/p/hexo_domain_name.html" target="_blank" rel="noopener">Hexo站点之域名配置【2】</a> —— By：白衣秀才  </p></blockquote><p>另：Linux下创建文件的命令 <em>touch filename</em> （eg. <em>touch CNAME</em>)  </p><h2 id="搭建hexo-配置"><a href="#搭建hexo-配置" class="headerlink" title="###搭建hexo/配置 "></a>###搭建hexo/配置 </h2><p>这一步折腾了2天，要不是有丰富的文章可以借阅，根本不会成功。<br>需要注意的是，大部分文章所使用的版本都比较早，需要自行替换成新的版本。  </p><blockquote><p><a href="https://www.jianshu.com/p/0823e387c019" target="_blank" rel="noopener">CentOS下搭建Hexo + github 博客</a> —— By：MaxZing  </p></blockquote><p>· 文章里面的Node.js版本比较早，指令没问题，当前（2018-03-28）最新版本是 <em>node-v8.10.0</em> 把文章里面的wget的地址替换成 <em><a href="https://nodejs.org/dist/v8.10.0/node-v8.10.0-linux-x64.tar.xz" target="_blank" rel="noopener">https://nodejs.org/dist/v8.10.0/node-v8.10.0-linux-x64.tar.xz</a></em><br>· 文章里面原作者配置环境的时候使用root用户，安装Hexo的时候使用另一个用户。我并没有分用户操作，全部在root下完成。<br>· 部署到GitHub步骤中，SSH密钥在服务器上生成，需要<strong>全部复制</strong>到Github配置页面去，包括邮箱账号。<br>· 如果使用教程里面的NexT主题，配置方面，直接参考主题原作者的教程更快更准确。  </p><blockquote><p><a href="http://theme-next.iissnan.com" target="_blank" rel="noopener">NexT使用文档</a> —— By：IIssNan  </p></blockquote><p>配置主题显示的语言，需要在服务器上配置Hexo自身的配置文档( <em>Hexo/_config.yml</em> )里面的language，设置为zh-Hans，与NexT主题里面的language文件夹内的预置文件才能吻合。不是在主题的配置文档（ <em>Hexo/themes/next/_config.yml</em> ）里面配置了。  </p><h2 id="发布第一篇文章"><a href="#发布第一篇文章" class="headerlink" title="###发布第一篇文章 "></a>###发布第一篇文章 </h2><p>应该就是这篇文章了。<br>MarkDown编写，在线编辑器或是下载安装编辑器，写好以后保存成.md的文档。  </p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;#第一篇文章 本站的搭建过程&lt;br&gt;我是KSCheng。&lt;br&gt;专业读的软件工程，工作后选择创业，荒废了一段技术能力。&lt;br&gt;这儿是我的个人站点，不定时更新一些文章吧。&lt;br&gt;今天将简单记录这个网站的搭建过程。    &lt;/p&gt;
+&lt;p&gt;###以下是这篇文章的内容概要&lt;br&gt;·
       
     
     </summary>
     
+      <category term="指南" scheme="https://KaiShaoCheng.github.io/categories/%E6%8C%87%E5%8D%97/"/>
+    
+    
+      <category term="Hexo" scheme="https://KaiShaoCheng.github.io/tags/Hexo/"/>
+    
+      <category term="ASF" scheme="https://KaiShaoCheng.github.io/tags/ASF/"/>
+    
+      <category term="BBR" scheme="https://KaiShaoCheng.github.io/tags/BBR/"/>
     
   </entry>
   
