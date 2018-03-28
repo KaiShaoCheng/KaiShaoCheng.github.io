@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="KaiShao Cheng">
 <meta property="og:description" content="第一篇文章 本站的搭建过程我是KSCheng。专业读的软件工程，工作后选择创业，荒废了一段技术能力。这儿是我的个人站点，不定时更新一些文章吧。今天将简单记录这个网站的搭建过程。     以下是这篇文章的内容概要  · 选购服务器/配置· 选购域名/解析· 搭建hexo/配置· 发布第一篇文章   选购服务器/配置  服务器的选购上，我无法提供更好（优惠）的选择，也没有全面的比较各大服务商。我所使用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-28T06:58:01.485Z">
+<meta property="og:updated_time" content="2018-03-28T06:59:42.215Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一篇文章 本站的搭建过程">
 <meta name="twitter:description" content="第一篇文章 本站的搭建过程我是KSCheng。专业读的软件工程，工作后选择创业，荒废了一段技术能力。这儿是我的个人站点，不定时更新一些文章吧。今天将简单记录这个网站的搭建过程。     以下是这篇文章的内容概要  · 选购服务器/配置· 选购域名/解析· 搭建hexo/配置· 发布第一篇文章   选购服务器/配置  服务器的选购上，我无法提供更好（优惠）的选择，也没有全面的比较各大服务商。我所使用">
@@ -366,8 +366,14 @@
 <p><a href="http://theme-next.iissnan.com" target="_blank" rel="noopener">NexT使用文档</a> —— By：IIssNan  </p>
 </blockquote>
 <p>配置主题显示的语言，需要在服务器上配置Hexo自身的配置文档( <em>Hexo/_config.yml</em> )里面的language，设置为zh-Hans，与NexT主题里面的language文件夹内的预置文件才能吻合。不是在主题的配置文档（ <em>Hexo/themes/next/_config.yml</em> ）里面配置了。  </p>
-<h2 id="发布第一篇文章"><a href="#发布第一篇文章" class="headerlink" title="发布第一篇文章 "></a>发布第一篇文章 </h2><p>应该就是这篇文章了。<br>MarkDown编写，在线编辑器或是下载安装编辑器，写好以后保存成.md的文档。<br><strong>开头格式</strong>如下：<br>    <figure class="highlight plain"><figcaption><span>xxx</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">date: YYYY-MM-DD HH:MM:SS</span><br><span class="line">author: xxx</span><br><span class="line">categories:</span><br><span class="line">- 指南</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">- ASF</span><br><span class="line">- BBR</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
-<p>然后上传到服务器 <em>hexo/source/_posts/</em> 里面，再执行clean并重新generate和deploy（要在hexo文件夹下执行）。</p>
+<h2 id="发布第一篇文章"><a href="#发布第一篇文章" class="headerlink" title="发布第一篇文章 "></a>发布第一篇文章 </h2><p>应该就是这篇文章了。<br>MarkDown编写，在线编辑器或是下载安装编辑器，写好以后保存成.md的文档。<br><strong>开头格式</strong>如下：<br>    title: xxx<br>    date: YYYY-MM-DD HH:MM:SS<br>    author: xxx<br>    categories:</p>
+<pre><code>- 指南
+tags:
+- Hexo
+- ASF
+- BBR
+---
+</code></pre><p>然后上传到服务器 <em>hexo/source/_posts/</em> 里面，再执行clean并重新generate和deploy（要在hexo文件夹下执行）。</p>
 
       
     </div>
